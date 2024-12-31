@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Skill Development Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>AI Skill Development Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h2>Empowering Youth with AI-Driven Skills</h2>
+        <p>Design an AI-powered platform to help students like Vivek bridge the gap between their current skills and career aspirations.</p>
+        <button onclick="window.location.href='#getStarted'">Get Started</button>
+    </section>
+
+    <section class="main" id="getStarted">
+        <h2>Welcome, Let's get started with skill development</h2>
+        <p>Enter your current skill level and career goals to receive personalized course recommendations.</p>
+        <form id="userForm">
+            <label for="skill">Current Skill Level:</label>
+            <input type="text" id="skill" name="skill" placeholder="e.g., Basic Programming" required>
+            
+            <label for="careerGoal">Career Goal:</label>
+            <input type="text" id="careerGoal" name="careerGoal" placeholder="e.g., Data Science" required>
+            
+            <button type="submit">Get Recommendations</button>
+        </form>
+        
+        <div id="recommendationSection" style="display:none;">
+            <h3>Recommended Courses:</h3>
+            <ul id="recommendationList"></ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AI Skill Development Platform. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
